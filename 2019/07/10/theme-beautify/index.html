@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/profile.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/profile.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/profile.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="keywords" content="markdown,hexo,blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何美化Hexo主题">
+<meta property="og:url" content="https://www.senhai.wang/2019/07/10/theme-beautify/index.html">
+<meta property="og:site_name" content="王森海">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg">
+<meta property="og:updated_time" content="2019-07-09T17:30:25.352Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何美化Hexo主题">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://www.senhai.wang/2019/07/10/theme-beautify/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>如何美化Hexo主题 | 王森海</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">王森海</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">我的个人网站</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.senhai.wang/2019/07/10/theme-beautify/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王森海">
+      <meta itemprop="description" content="学点干货，做点趣事">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王森海">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">如何美化Hexo主题
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-07-10 00:38:37" itemprop="dateCreated datePublished" datetime="2019-07-10T00:38:37+08:00">2019-07-10</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg" alt></p>
+<a id="more"></a>
+<p>本文介绍了在 Next 主题的基础上进一步对博客进行美化的方案，主要包括:</p>
+<ul>
+<li>修改侧边栏的位置到左边</li>
+<li>添加不同类型的动态背景效果(待更新…)</li>
+<li>添加 live2d 看板娘(待更新…)</li>
+<li>为布局元素添加边缘弹性摆动效果(待更新…)</li>
+<li>个性化回到顶部按钮(待更新…)</li>
+<li>添加不同类型的鼠标点击特效(待更新…)</li>
+<li>评论区输入打字礼花特效(待更新…)<br>读者可以根据需要选择其中喜欢的方案应用到站点博客中。</li>
+</ul>
+<h1 id="修改博客字体"><a href="#修改博客字体" class="headerlink" title="修改博客字体"></a>修改博客字体</h1><p>在 <a href="https://www.google.com/fonts" target="_blank" rel="noopener">Google Fonts</a>上找到心仪的字体，然后在主题配置文件中为不同的应用场景配置字体</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">font:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 外链字体库地址，例如 //fonts.googleapis.com (默认值)</span></span><br><span class="line"><span class="attr">  host:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 全局字体，应用在 body 元素上</span></span><br><span class="line"><span class="attr">  global:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">Monda</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 标题字体 (h1, h2, h3, h4, h5, h6)</span></span><br><span class="line"><span class="attr">  headings:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span> <span class="string">Roboto</span> <span class="string">Slab</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 文章字体</span></span><br><span class="line"><span class="attr">  posts:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Logo 字体</span></span><br><span class="line"><span class="attr">  logo:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 代码字体，应用于 code 以及代码块</span></span><br><span class="line"><span class="attr">  codes:</span></span><br><span class="line"><span class="attr">    external:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    family:</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="文章页末美化"><a href="#文章页末美化" class="headerlink" title="文章页末美化"></a>文章页末美化</h1><h2 id="侧边栏放左边"><a href="#侧边栏放左边" class="headerlink" title="侧边栏放左边"></a>侧边栏放左边</h2><p>Next 主题各系列中只有 Pisces 和 Gemini 支持通过主题配置文件来将侧边栏置于左侧或右侧，而 Muse 和 Mist 则需要深度修改源码才能实现改变侧边栏位置。</p>
+<p>在自定义样式文件中添加如下规则：<br>themes\next\source\css_custom\custom.styl</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.sidebar-toggle &#123;</span><br><span class="line">  left: 30px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.sidebar &#123;</span><br><span class="line">  left: 0px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>修改动效脚本代码：<br>themes\next\source\js\src\motion.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>)</span><br><span class="line">  .on(<span class="string">'sidebar.isShowing'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(</span><br><span class="line">-     &#123;<span class="attr">paddingRight</span>: SIDEBAR_WIDTH&#125;,</span><br><span class="line">+     &#123;<span class="attr">paddingLeft</span>: SIDEBAR_WIDTH&#125;,</span><br><span class="line">      SIDEBAR_DISPLAY_DURATION</span><br><span class="line">    );</span><br><span class="line">  &#125;)</span><br><span class="line">  .on(<span class="string">'sidebar.isHiding'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  &#125;);</span><br><span class="line">  ...</span><br><span class="line">  hideSidebar: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">-   NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">paddingRight</span>: <span class="number">0</span>&#125;);</span><br><span class="line">+   NexT.utils.isDesktop() &amp;&amp; $(<span class="string">'body'</span>).velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">paddingLeft</span>: <span class="number">0</span>&#125;);</span><br><span class="line">    <span class="keyword">this</span>.sidebarEl.find(<span class="string">'.motion-element'</span>).velocity(<span class="string">'stop'</span>).css(<span class="string">'display'</span>, <span class="string">'none'</span>);</span><br><span class="line">    <span class="keyword">this</span>.sidebarEl.velocity(<span class="string">'stop'</span>).velocity(&#123;<span class="attr">width</span>: <span class="number">0</span>&#125;, &#123;<span class="attr">display</span>: <span class="string">'none'</span>&#125;);</span><br><span class="line"></span><br><span class="line">    sidebarToggleLines.init();</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如此以来就可以将侧边栏放置在左边了，但当窗口宽度缩小到 991px 之后会出现样式错误：侧边栏收缩消失但是页面左侧仍留有空白间距，此时修改如下代码即可：<br>themes\next\source\css_common\scaffolding\base.styl</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  position: relative; // Required by scrollspy</span><br><span class="line">  font-family: $font-family-base;</span><br><span class="line">  font-size: $font-size-base;</span><br><span class="line">  line-height: $line-height-base;</span><br><span class="line">  color: $text-color;</span><br><span class="line">  background: $body-bg-color;</span><br><span class="line"></span><br><span class="line">- +mobile() &#123; padding-left: 0 !important; &#125;</span><br><span class="line">- +tablet() &#123; padding-left: 0 !important; &#125;  </span><br><span class="line">+ +mobile() &#123; padding-right: 0 !important; &#125;</span><br><span class="line">+ +tablet() &#123; padding-right: 0 !important; &#125;</span><br><span class="line">  +desktop-large() &#123; font-size: $font-size-large; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h1><h2 id="站点访问量统计"><a href="#站点访问量统计" class="headerlink" title="站点访问量统计"></a>站点访问量统计</h2><p>该功能由 不蒜子 提供<br>独立访客数为 UV，网站浏览量为 PV，访客数和浏览量的区别在于一个用户连续点击 n 篇文章，会记录 n 次浏览量，但只记录一次访客数。</p>
+<p>由于不蒜子是基于域名来进行统计计算的，所以通过 localhost:4000 端口访问的时候统计数据 PV 和 UV 都会异常的大，属于正常现象。</p>
+<p>在页脚布局模板文件首行添加如下代码：<br>themes\next\layout_partial\footer.swig</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>刷新浏览器即可生效。<br>高阶用法：通过修改代码来自定义统计文案，如果你想使用本站统计文案，需要对不蒜子的代码做出如下修改:<br>themes\next\layout_third-party\analytics\busuanzi-counter.swig</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>visitors %&#125;</span><br><span class="line"><span class="bullet">-   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-uv"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('footer.total_visitors') &#125;&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-uv"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>visitors', '<span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&#123;&#123; theme.busuanzi_count.total_visitors_icon &#125;&#125;"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>views %&#125;</span><br><span class="line"><span class="bullet">-   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-pv"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('footer.total_views') &#125;&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-pv"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>views', '<span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&#123;&#123; theme.busuanzi_count.total_views_icon &#125;&#125;"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在自定义样式文件中添加如下样式：<br>themes/next/source/css/_custom/custom.styl</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//修改不蒜子数据颜色</span><br><span class="line">.busuanzi-value &#123;</span><br><span class="line">  color: #1890ff;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后修改统计表述文案：<br>themes\next\languages\zh-CN.yml</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line"><span class="attr">  total_views:</span> <span class="string">"历经 %s 次回眸才与你相遇"</span></span><br><span class="line"><span class="attr">  total_visitors:</span> <span class="string">"我的第 %s 位朋友，"</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="站点运行时间统计"><a href="#站点运行时间统计" class="headerlink" title="站点运行时间统计"></a>站点运行时间统计</h2><p>在主题自定义布局文件中添加以下代码：<br>thems\next\layout_custom\custom.swig</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 页脚站点运行时间统计 #&#125;</span><br><span class="line">&#123;% if theme.footer.ages.enable %&#125;</span><br><span class="line">  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    function timer() &#123;</span><br><span class="line">      var ages = moment.preciseDiff(moment(),moment(&#123;&#123; theme.footer.ages.birthday &#125;&#125;,&quot;YYYYMMDD&quot;));</span><br><span class="line">      ages = ages.replace(/years?/, &quot;年&quot;);</span><br><span class="line">      ages = ages.replace(/months?/, &quot;月&quot;);</span><br><span class="line">      ages = ages.replace(/days?/, &quot;天&quot;);</span><br><span class="line">      ages = ages.replace(/hours?/, &quot;小时&quot;);</span><br><span class="line">      ages = ages.replace(/minutes?/, &quot;分&quot;);</span><br><span class="line">      ages = ages.replace(/seconds?/, &quot;秒&quot;);</span><br><span class="line">      ages = ages.replace(/\d+/g, &apos;&lt;span style=&quot;color:&#123;&#123; theme.footer.ages.color &#125;&#125;&quot;&gt;$&amp;&lt;/span&gt;&apos;);</span><br><span class="line">      div.innerHTML = `&#123;&#123; __(&apos;footer.age&apos;)&#125;&#125; $&#123;ages&#125;`;</span><br><span class="line">    &#125;</span><br><span class="line">    var div = document.createElement(&quot;div&quot;);</span><br><span class="line">    //插入到copyright之后</span><br><span class="line">    var copyright = document.querySelector(&quot;.copyright&quot;);</span><br><span class="line">    document.querySelector(&quot;.footer-inner&quot;).insertBefore(div, copyright.nextSibling);</span><br><span class="line">    timer();</span><br><span class="line">    setInterval(&quot;timer()&quot;,1000)</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果 custom.swig 文件不存在，需要手动新建并在布局页面中 body 末尾引入：<br>themes\next\layout_layout.swig</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">      ...</span><br><span class="line">      &#123;% include &apos;_third-party/exturl.swig&apos; %&#125;</span><br><span class="line">      &#123;% include &apos;_third-party/bookmark.swig&apos; %&#125;</span><br><span class="line">      &#123;% include &apos;_third-party/copy-code.swig&apos; %&#125;</span><br><span class="line"></span><br><span class="line">+     &#123;% include &apos;_custom/custom.swig&apos; %&#125;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">  &lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>修改主题配置文件：<br>themes\next_config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> footer:</span><br><span class="line">    ...</span><br><span class="line">+   ages:</span><br><span class="line">+     # site running time</span><br><span class="line">+     enable: true</span><br><span class="line">+     # birthday of your site</span><br><span class="line">+     birthday: 20181001</span><br><span class="line">+     # color of number</span><br><span class="line">+     color: &quot;#1890ff&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后补全对应文案：<br>themes\next\languages\zh-CN.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  footer:</span><br><span class="line">    powered: &quot;由 %s 强力驱动&quot;</span><br><span class="line">    theme: 主题</span><br><span class="line">+   age: 我已在此等候你</span><br><span class="line">    total_views: &quot;历经 %s 次回眸才与你相遇&quot;</span><br><span class="line">    total_visitors: &quot;我的第 %s 位朋友，&quot;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>王森海</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://www.senhai.wang/2019/07/10/theme-beautify/" title="如何美化Hexo主题">https://www.senhai.wang/2019/07/10/theme-beautify/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/09/audio-test/" rel="next" title="如何在Hexo中插入多媒体文件">
+                如何在Hexo中插入多媒体文件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/head.jpg" alt="王森海">
+              </a>
+            
+              <p class="site-author-name" itemprop="name">王森海</p>
+              <div class="site-description motion-element" itemprop="description">学点干货，做点趣事</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/Wang-Senhai" " title="GitHub &rarr; https://github.com/Wang-Senhai" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="mailto:18813005987@163.com" title="E-Mail &rarr; mailto:18813005987@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.weibo.com/u/5393173560" title="Weibo &rarr; https://www.weibo.com/u/5393173560" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/channel/UC9qSKYVy3W6w3gFAlb-gSpg?view_as=subscriber" title="YouTube &rarr; https://www.youtube.com/channel/UC9qSKYVy3W6w3gFAlb-gSpg?view_as=subscriber" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#修改博客字体"><span class="nav-text">修改博客字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章页末美化"><span class="nav-text">文章页末美化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏放左边"><span class="nav-text">侧边栏放左边</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据统计"><span class="nav-text">数据统计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#站点访问量统计"><span class="nav-text">站点访问量统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站点运行时间统计"><span class="nav-text">站点运行时间统计</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">王森海</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="footer-custom">Lost yourself, remember to pick it up</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv">
+    我的第 <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 位朋友
+    </span>
+  
+
+  
+    <span class="post-meta-divider"></span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv">
+    历经 <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次回眸才与你相遇
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+  <script>
+    function timer() {
+      var ages = moment.preciseDiff(moment(),moment(20190710,"YYYYMMDD"));
+      ages = ages.replace(/years?/, "年");
+      ages = ages.replace(/months?/, "月");
+      ages = ages.replace(/days?/, "天");
+      ages = ages.replace(/hours?/, "小时");
+      ages = ages.replace(/minutes?/, "分");
+      ages = ages.replace(/seconds?/, "秒");
+      ages = ages.replace(/\d+/g, '<span style="color:#1890ff">$&</span>');
+      div.innerHTML = `我已在此等候你 ${ages}`;
+    }
+    var div = document.createElement("div");
+    //插入到copyright之后
+    var copyright = document.querySelector(".copyright");
+    document.querySelector(".footer-inner").insertBefore(div, copyright.nextSibling);
+    timer();
+    setInterval("timer()",1000)
+  </script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+</html>

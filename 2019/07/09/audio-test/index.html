@@ -1,20 +1,107 @@
 <!DOCTYPE html>
-<html lang="zh">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
-<title>如何在Hexo中插入多媒体文件 - 王森海</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
-    <meta name="keywords" content="test,markdown">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/profile.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/profile.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/profile.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.2.0',
+    sidebar: {"position":"left","width":300,"display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="keywords" content="markdown,test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何在Hexo中插入多媒体文件">
 <meta property="og:url" content="https://www.senhai.wang/2019/07/09/audio-test/index.html">
 <meta property="og:site_name" content="王森海">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg">
-<meta property="og:updated_time" content="2019-07-09T12:27:02.997Z">
+<meta property="og:updated_time" content="2019-07-09T14:55:53.600Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在Hexo中插入多媒体文件">
 <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg">
@@ -23,176 +110,333 @@
 
 
 
+  
+  
+  <link rel="canonical" href="https://www.senhai.wang/2019/07/09/audio-test/">
 
 
-<link rel="icon" href="/images/profile.png">
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>如何在Hexo中插入多媒体文件 | 王森海</title>
+  
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/github-gist.css">
 
 
-    
-    
-    
-    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
-    
-
-    
-    
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
-    
-
-    
-    
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
 
 
-    
-    
-    
-    
-
-<link rel="stylesheet" href="/css/back-to-top.css">
 
 
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-<link rel="stylesheet" href="/css/progressbar.css">
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-
-    
-    
-    
-
-    
-    
-    
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    
-
-    
 
 
-<link rel="stylesheet" href="/css/style.css">
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
-<body class="is-3-column">
-    <nav class="navbar navbar-main">
-    <div class="container">
-        <div class="navbar-brand is-flex-center">
-            <a class="navbar-item navbar-logo" href="/">
-            
-                <img src="/images/logo.svg" alt="如何在Hexo中插入多媒体文件" height="28">
-            
-            </a>
-        </div>
-        <div class="navbar-menu">
-            
-            <div class="navbar-start">
-                
-                <a class="navbar-item" href="/">Home</a>
-                
-                <a class="navbar-item" href="/archives/">Archives</a>
-                
-                <a class="navbar-item" href="/categories/">Categories</a>
-                
-                <a class="navbar-item" href="/tags/">Tags</a>
-                
-                <a class="navbar-item" href="/about/">About</a>
-                
-            </div>
-            
-            <div class="navbar-end">
-                
-                    
-                    
-                    <a class="navbar-item" target="_blank" title="WSH GitHub" href="https://www.github.com/Wang-Senhai">
-                        
-                        <i class="fab fa-github"></i>
-                        
-                    </a>
-                    
-                
-                
-                <a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
-                
-                
-                <a class="navbar-item search" title="搜索" href="javascript:;">
-                    <i class="fas fa-search"></i>
-                </a>
-                
-            </div>
-        </div>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">王森海</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+    
+      
+        <p class="site-subtitle">我的个人网站</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
 </nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
     
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-9-widescreen has-order-2 column-main"><div class="card">
-    
-    <div class="card-image">
-        <span class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg" alt="如何在Hexo中插入多媒体文件">
-        </span>
-    </div>
-    
-    <div class="card-content article ">
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
             
-                <i class="fas fa-angle-double-right"></i>如何在Hexo中插入多媒体文件
-            
-        </h1>
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.senhai.wang/2019/07/09/audio-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王森海">
+      <meta itemprop="description" content="学点干货，做点趣事">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王森海">
+    </span>
+
+    
+      <header class="post-header">
+
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-09T08:16:05.000Z"><i class="far fa-calendar-alt">&nbsp;</i>2019-07-09</time>
+        
+          <h1 class="post-title" itemprop="name headline">如何在Hexo中插入多媒体文件
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2019-07-09T12:27:02.997Z"><i class="far fa-calendar-check">&nbsp;</i>2019-07-09</time>
+              
+
+              <time title="创建时间：2019-07-09 16:16:05" itemprop="dateCreated datePublished" datetime="2019-07-09T16:16:05+08:00">2019-07-09</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a></span>
+
                 
                 
-                <div class="level-item">
-                <i class="far fa-folder-open has-text-grey"></i>&nbsp;
-                <a class="has-link-grey -link" href="/categories/blog/">blog</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    <i class="far fa-clock"></i>&nbsp;
-                    
-                    
-                    1 分钟 读完 (大约 183 个字)
-                </span>
-                
-                
-                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
-                    <i class="far fa-eye"></i>
-                    <span id="busuanzi_value_page_pv">0</span>次访问
-                </span>
-                
-            </div>
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
         </div>
-        
-        <div class="content">
-            <hr>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://cdn.pixabay.com/photo/2019/06/23/01/56/cityscape-4292702_1280.jpg" alt></p>
 <a id="more"></a>
 <h1 id="添加音频"><a href="#添加音频" class="headerlink" title="添加音频"></a>添加音频</h1><h2 id="添加音频-本地"><a href="#添加音频-本地" class="headerlink" title="添加音频-本地"></a>添加音频-本地</h2><p>没有找到更好看的方法了</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"no"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span></span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">marginwidth</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">marginheight</span>=<span class="hljs-string">"0"</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">width</span>=<span class="hljs-string">50%</span> <span class="hljs-attr">height</span>=<span class="hljs-string">100</span></span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">src</span>=<span class="hljs-string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">width</span>=<span class="string">50%</span> <span class="attr">height</span>=<span class="string">100</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="50%" height="100" src="http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3">
 </iframe>
@@ -200,445 +444,554 @@
 <!-- <audio controls="controls" > <source src="http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3" type="audio/mp3" > </audio> -->
 
 <h2 id="添加音频-网易云歌单"><a href="#添加音频-网易云歌单" class="headerlink" title="添加音频-网易云歌单"></a>添加音频-网易云歌单</h2><p>type参数和引用的网易云来源有关，0指的是歌单</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"no"</span></span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">marginwidth</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">marginheight</span>=<span class="hljs-string">"0"</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">width</span>=<span class="hljs-string">50%</span> <span class="hljs-attr">height</span>=<span class="hljs-string">100</span></span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">src</span>=<span class="hljs-string">"//music.163.com/outchain/player?type=0&amp;id=827122421&amp;auto=0"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">frameborder</span>=<span class="string">"no"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">width</span>=<span class="string">50%</span> <span class="attr">height</span>=<span class="string">100</span></span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=0&amp;id=827122421&amp;auto=0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <iframe frameborder="no" marginwidth="0" marginheight="0" width="50%" height="100" src="//music.163.com/outchain/player?type=0&id=827122421&auto=0">
 </iframe>
 
 <h2 id="添加音频-网易云单曲"><a href="#添加音频-网易云单曲" class="headerlink" title="添加音频-网易云单曲"></a>添加音频-网易云单曲</h2><p>type为2，指的是单曲</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">frameborder</span>=<span class="hljs-string">"no"</span> <span class="hljs-attr">border</span>=<span class="hljs-string">"0"</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">marginwidth</span>=<span class="hljs-string">"0"</span> <span class="hljs-attr">marginheight</span>=<span class="hljs-string">"0"</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">width</span>=<span class="hljs-string">50%</span> <span class="hljs-attr">height</span>=<span class="hljs-string">100</span> </span></span><br><span class="line"><span class="hljs-tag">    <span class="hljs-attr">src</span>=<span class="hljs-string">"//music.163.com/outchain/player?type=2&amp;id=476114873&amp;auto=0"</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">width</span>=<span class="string">50%</span> <span class="attr">height</span>=<span class="string">100</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=476114873&amp;auto=0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="50%" height="100" src="//music.163.com/outchain/player?type=2&id=476114873&auto=0">
 </iframe>
 
 <h2 id="添加音频-embed标签"><a href="#添加音频-embed标签" class="headerlink" title="添加音频-embed标签"></a>添加音频-embed标签</h2><p>此处有音频，自动播放无法取消，无法显示控件<br>现在被我注释掉了，完全感知不到了</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">embed</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">"controls"</span>  <span class="hljs-attr">hidden</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">loop</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">embed</span> <span class="attr">controls</span>=<span class="string">"controls"</span>  <span class="attr">hidden</span>=<span class="string">"true"</span> <span class="attr">loop</span>=<span class="string">"true"</span> <span class="attr">src</span>=<span class="string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 
 <!-- <embed controls="controls"  hidden="true" loop="true" src="http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3" /> -->
 
 <h2 id="添加音频-audio标签"><a href="#添加音频-audio标签" class="headerlink" title="添加音频-audio标签"></a>添加音频-audio标签</h2><p>此处有音乐，但没有自动播放，audio标签无法正常显示控件</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">"controls"</span> &gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"audio/mp3"</span> &gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>=<span class="string">"controls"</span> &gt;</span> <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mp3"</span> &gt;</span> <span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="添加音频-强制html"><a href="#添加音频-强制html" class="headerlink" title="添加音频-强制html"></a>添加音频-强制html</h2><p>也并没有用</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">"controls"</span>&gt;</span></span><br><span class="line">Your browser does not support the audio element.</span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"http://senhai.wang/mp3_list/%E8%BE%BE%E6%8B%89%E8%B9%A6%E5%90%A7.mp3"</span> <span class="attr">controls</span>=<span class="string">"controls"</span>&gt;</span></span><br><span class="line">Your browser does not support the audio element.</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h1 id="添加视频"><a href="#添加视频" class="headerlink" title="添加视频"></a>添加视频</h1><p>可以正常使用</p>
-<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"video"</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">""</span> <span class="hljs-attr">preload</span>=<span class="hljs-string">"none"</span> <span class="hljs-attr">poster</span>=<span class="hljs-string">"http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg"</span>&gt;</span></span><br><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"mp4"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/mp4"</span>&gt;</span></span><br><span class="line">      <span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">"video"</span> <span class="attr">controls</span>=<span class="string">""</span> <span class="attr">preload</span>=<span class="string">"none"</span> <span class="attr">poster</span>=<span class="string">"http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">source</span> <span class="attr">id</span>=<span class="string">"mp4"</span> <span class="attr">src</span>=<span class="string">"http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <video id="video" controls preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
       <source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
       </video>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>王森海</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://www.senhai.wang/2019/07/09/audio-test/" title="如何在Hexo中插入多媒体文件">https://www.senhai.wang/2019/07/09/audio-test/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
+          
+            <a href="/tags/test/" rel="tag"><i class="fa fa-tag"></i> test</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/10/theme-beautify/" rel="prev" title="如何美化Hexo主题">
+                <i class="fa fa-chevron-left"></i> 如何美化Hexo主题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/09/我的HEXO/" rel="next" title="如何发布一篇Hexo博文">
+                如何发布一篇Hexo博文 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
         </div>
         
-            <ul class="post-copyright">
-            <li><strong>本文标题：</strong><a href="https://www.senhai.wang/2019/07/09/audio-test/">如何在Hexo中插入多媒体文件</a></li>
-            <li><strong>本文作者：</strong><a href="https://www.senhai.wang">王森海</a></li>
-            <li><strong>本文链接：</strong><a href="https://www.senhai.wang/2019/07/09/audio-test/">https://www.senhai.wang/2019/07/09/audio-test/</a></li>
-            <li><strong>发布时间：</strong>2019-07-09</li>
-            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
-            </li>
-            </ul>
-        
-        
-        <hr style="height:1px;margin:1rem 0">
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <i class="fas fa-tags has-text-grey"></i>&nbsp;
-                    <a class="has-link-grey -link" href="/tags/markdown/">markdown</a>,&nbsp;<a class="has-link-grey -link" href="/tags/test/">test</a>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <a href="/">
+                <img class="site-author-image" itemprop="image" src="/images/head.jpg" alt="王森海">
+              </a>
+            
+              <p class="site-author-name" itemprop="name">王森海</p>
+              <div class="site-description motion-element" itemprop="description">学点干货，做点趣事</div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
                 </div>
-            </div>
-        </div>
-        
-        
-        
-    </div>
-</div>
+              
 
-
-
-
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/07/09/我的HEXO/">
-                <span class="level-item">如何发布一篇Hexo博文</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
-
-
-
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div id="comment-container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-	var gitment = new Gitment({
-		id: '2019/07/09/audio-test/',
-		owner: 'Wang-Senhai',
-		repo: 'blog_comment',
-		oauth: {
-			client_id: 'bfdbdc8e920e7eece65a',
-			client_secret: 'da8a28b1898578dda6b40629f4a88b90f12bcbd9',
-		},
-	})
-	gitment.render('comment-container')
-</script>
-
-    </div>
-</div>
-
-</div>
+              
                 
-
-
-
-
-<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
-    
-        
-<div class="card widget">
-    <div class="card-content">
-        <nav class="level" style="margin-bottom:1rem">
-            <div class="level-item has-text-centered">
-                <div>
+                
+                <div class="site-state-item site-state-categories">
+                  
                     
-                        <img class="image is-96x96 has-mb-6" src="/images/head.jpg" alt="Senhai Wang">
+                      <a href="/categories/">
+                    
+                  
                     
                     
-                    <p class="is-size-4 is-block">
-                        Senhai Wang
-                    </p>
+                      
                     
+                      
                     
-                    <p class="is-size-6 is-block">
-                        New Here
-                    </p>
+                      
                     
+                      
                     
-                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
-                        <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>Hong Kong, China</span>
-                    </p>
-                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
                 </div>
-            </div>
-        </nav>
-        <nav class="level menu-list is-mobile" style="margin-bottom:1rem">
-            <div class="level-item has-text-centered is-marginless">
-                <a href="/archives/">
-                    <p class="heading">
-                        文章
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        3
-                    </p>
-                </a>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <a href="/categories/">
-                    <p class="heading">
-                        分类
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        2
-                    </p>
-                </a>
-            </div>
-            <div class="level-item has-text-centered is-marginless">
-                <a href="/tags/">
-                    <p class="heading">
-                        标签
-                    </p>
-                    <p class="title has-text-weight-normal">
-                        4
-                    </p>
-                </a>
-            </div>
-        </nav>
-        <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://www.github.com/Wang-Senhai" target="_blank">
-                <i class="fab fa-github"></i>&nbsp;&nbsp;关注我</a>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Envelope" href="mailto:18813005987@163.com">
-                
-                <i class="fas fa-envelope"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://www.github.com/Wang-Senhai">
-                
-                <i class="fab fa-github"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="https://facebook.com">
-                
-                <i class="fab fa-facebook"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="https://twitter.com">
-                
-                <i class="fab fa-twitter"></i>
-                
-            </a>
-            
-        </div>
-        
-    </div>
-</div>
+              
 
-    
-        
-<div class="card widget column-left is-sticky" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                目录
-            </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#添加音频">
-        <span class="has-mr-6">1</span>
-        <span>添加音频</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#添加音频-本地">
-        <span class="has-mr-6">1.1</span>
-        <span>添加音频-本地</span>
-        </a></li><li>
-        <a class="is-flex" href="#添加音频-网易云歌单">
-        <span class="has-mr-6">1.2</span>
-        <span>添加音频-网易云歌单</span>
-        </a></li><li>
-        <a class="is-flex" href="#添加音频-网易云单曲">
-        <span class="has-mr-6">1.3</span>
-        <span>添加音频-网易云单曲</span>
-        </a></li><li>
-        <a class="is-flex" href="#添加音频-embed标签">
-        <span class="has-mr-6">1.4</span>
-        <span>添加音频-embed标签</span>
-        </a></li><li>
-        <a class="is-flex" href="#添加音频-audio标签">
-        <span class="has-mr-6">1.5</span>
-        <span>添加音频-audio标签</span>
-        </a></li><li>
-        <a class="is-flex" href="#添加音频-强制html">
-        <span class="has-mr-6">1.6</span>
-        <span>添加音频-强制html</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#添加视频">
-        <span class="has-mr-6">2</span>
-        <span>添加视频</span>
-        </a></li></ul>
-        </div>
-    </div>
-</div>
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
 
+          
 
-    
-    
-        <div class="column-right-shadow is-hidden-widescreen ">
-        
-        </div>
-    
-</div>
+          
 
-                
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-    <div class="container">
-        <div class="level">
-            <div class="level-start has-text-centered-mobile">
-                <a class="footer-logo is-block has-mb-6" href="/">
-                
-                    <img src="/images/logo.svg" alt="如何在Hexo中插入多媒体文件" height="28">
-                
-                </a>
-                <p class="is-size-7">
-                &copy; 2019 王森海&nbsp;
-                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
-                
-                <br>
-                <span id="busuanzi_container_site_uv">
-                共<span id="busuanzi_value_site_uv">0</span>个访客
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/Wang-Senhai" " title="GitHub &rarr; https://github.com/Wang-Senhai" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
                 </span>
-                
-                </p>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="mailto:18813005987@163.com" title="E-Mail &rarr; mailto:18813005987@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.weibo.com/u/5393173560" title="Weibo &rarr; https://www.weibo.com/u/5393173560" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.youtube.com/channel/UC9qSKYVy3W6w3gFAlb-gSpg?view_as=subscriber" title="YouTube &rarr; https://www.youtube.com/channel/UC9qSKYVy3W6w3gFAlb-gSpg?view_as=subscriber" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+                </span>
+              
             </div>
-            <div class="level-end">
+          
+
+          
+
+          
+          
+
+          
             
-                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
-                
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Lost yourself, remember to pick it up" href="https://fontawesome.com/icons/heart?style=solid">
-                        
-                        <i class="fas fa-code-branch"></i>&nbsp;<i class="fas fa-keyboard"></i>&nbsp;<i class="fas fa-coffee"></i>&nbsp;<i class="fas fa-heart"></i>&nbsp;
-                        
-                    </a>
-                </p>
-                
-                <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Wsh GitHub" href="https://www.github.com/Wang-Senhai">
-                        
-                        <i class="fab fa-github"></i>&nbsp;
-                        
-                    </a>
-                </p>
-                
-                </div>
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
             
-            </div>
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#添加音频"><span class="nav-text">添加音频</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#添加音频-本地"><span class="nav-text">添加音频-本地</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加音频-网易云歌单"><span class="nav-text">添加音频-网易云歌单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加音频-网易云单曲"><span class="nav-text">添加音频-网易云单曲</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加音频-embed标签"><span class="nav-text">添加音频-embed标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加音频-audio标签"><span class="nav-text">添加音频-audio标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加音频-强制html"><span class="nav-text">添加音频-强制html</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加视频"><span class="nav-text">添加视频</span></a></li></ol></div>
+            
+
+          </div>
         </div>
+      <!--/noindex-->
+      
+
+      
+
     </div>
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
-<script>moment.locale("zh-CN");</script>
+  </aside>
+  
 
 
-    
-    
-    
-    <script src="/js/animation.js"></script>
-    
+        
+      </div>
+    </main>
 
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
-    <script src="/js/gallery.js" defer></script>
-    
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">王森海</span>
 
-    
-    
+  
 
-<div id="outdated">
-    <h6>Your browser is out-of-date!</h6>
-    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
-            my browser now </a></p>
-    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  
 </div>
-<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        outdatedBrowser({
-            bgColor: '#f25648',
-            color: '#ffffff',
-            lowerThan: 'flex'
-        });
-    });
-</script>
 
 
-    
-    
-<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    MathJax.Hub.Config({
-        'HTML-CSS': {
-            matchFontHeight: false
-        },
-        SVG: {
-            matchFontHeight: false
-        },
-        CommonHTML: {
-            matchFontHeight: false
-        },
-        tex2jax: {
-            inlineMath: [
-                ['$','$'],
-                ['\\(','\\)']
-            ]
-        }
-    });
-});
-</script>
-
-    
-    
-
-<a id="back-to-top" title="回到顶端" href="javascript:;">
-    <i class="fas fa-chevron-up"></i>
-</a>
-<script src="/js/back-to-top.js" defer></script>
 
 
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
-    <script src="/js/clipboard.js" defer></script>
-    
-
-    
-    
-    
-
-    
 
 
-<script src="/js/main.js" defer></script>
 
-    
-    <div class="searchbox ins-search">
-    <div class="searchbox-container ins-search-container">
-        <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
-            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="searchbox-result-wrapper ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
+
+  <div class="footer-custom">Lost yourself, remember to pick it up</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv">
+    我的第 <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 位朋友
+    </span>
+  
+
+  
+    <span class="post-meta-divider"></span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv">
+    历经 <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次回眸才与你相遇
+    </span>
+  
 </div>
-<script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: '文章',
-                PAGES: '页面',
-                CATEGORIES: '分类',
-                TAGS: '标签',
-                UNTITLED: '(无标题)',
-            },
-            CONTENT_URL: '/content.json',
-        };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
-</script>
-<script src="/js/insight.js" defer></script>
-<link rel="stylesheet" href="/css/search.css">
-<link rel="stylesheet" href="/css/insight.css">
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
     
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.2.0"></script>
+
+  <script src="/js/motion.js?v=7.2.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.2.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/pangu/dist/pangu.min.js?v=3.3"></script>
+  <script>pangu.spacingPage();</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment-precise-range-plugin@1.3.0/moment-precise-range.min.js"></script>
+  <script>
+    function timer() {
+      var ages = moment.preciseDiff(moment(),moment(20190710,"YYYYMMDD"));
+      ages = ages.replace(/years?/, "年");
+      ages = ages.replace(/months?/, "月");
+      ages = ages.replace(/days?/, "天");
+      ages = ages.replace(/hours?/, "小时");
+      ages = ages.replace(/minutes?/, "分");
+      ages = ages.replace(/seconds?/, "秒");
+      ages = ages.replace(/\d+/g, '<span style="color:#1890ff">$&</span>');
+      div.innerHTML = `我已在此等候你 ${ages}`;
+    }
+    var div = document.createElement("div");
+    //插入到copyright之后
+    var copyright = document.querySelector(".copyright");
+    document.querySelector(".footer-inner").insertBefore(div, copyright.nextSibling);
+    timer();
+    setInterval("timer()",1000)
+  </script>
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>
