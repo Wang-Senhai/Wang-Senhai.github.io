@@ -16,7 +16,7 @@
 <meta property="og:description" content="这篇文章用于测试并整理Hexo中的各类内容的写法，便于日后使用。Hexo中的分段需要在编辑文字的过程中加入两个空格或者一个回车来起到分段的效果。这里使用了两个空格和一个回车 这里使用了一个空行 MarkDown中可以使用两种方式进行标题分类，并不清楚能否同时使用，所以在这儿测试一下 使用双横线创建标题使用井号进行标题分类，井号后加空格这里是二级标题的效果三级四级这里是文字效果斜体粗体粗斜体被删除的">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://www.senhai.wang/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-09T06:08:07.358Z">
+<meta property="og:updated_time" content="2019-07-09T07:54:36.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的HEXO测试">
 <meta name="twitter:description" content="这篇文章用于测试并整理Hexo中的各类内容的写法，便于日后使用。Hexo中的分段需要在编辑文字的过程中加入两个空格或者一个回车来起到分段的效果。这里使用了两个空格和一个回车 这里使用了一个空行 MarkDown中可以使用两种方式进行标题分类，并不清楚能否同时使用，所以在这儿测试一下 使用双横线创建标题使用井号进行标题分类，井号后加空格这里是二级标题的效果三级四级这里是文字效果斜体粗体粗斜体被删除的">
@@ -158,7 +158,7 @@
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-07-09T04:20:34.000Z"><i class="far fa-calendar-alt">&nbsp;</i>2019-07-09</time>
                 
-                <time class="level-item has-text-grey is-hidden-mobile" datetime="2019-07-09T06:08:07.358Z"><i class="far fa-calendar-check">&nbsp;</i>2019-07-09</time>
+                <time class="level-item has-text-grey is-hidden-mobile" datetime="2019-07-09T07:54:36.839Z"><i class="far fa-calendar-check">&nbsp;</i>2019-07-09</time>
                 
                 
                 <div class="level-item">
@@ -171,7 +171,7 @@
                     <i class="far fa-clock"></i>&nbsp;
                     
                     
-                    3 分钟 读完 (大约 472 个字)
+                    5 分钟 读完 (大约 775 个字)
                 </span>
                 
                 
@@ -250,7 +250,153 @@
 </ol>
 </li>
 </ol>
-<h3 id="添加pyechart图表"><a href="#添加pyechart图表" class="headerlink" title="添加pyechart图表"></a>添加pyechart图表</h3>
+<h3 id="添加pyechart图表"><a href="#添加pyechart图表" class="headerlink" title="添加pyechart图表"></a>添加pyechart图表</h3><p>大一点的图表添加方式尚未解决。。先用图片凑活一下<br>小一点的图片可以用html代码解决</p>
+<div id="ce47f26a687246f88d0ece5a45aee7e2" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_ce47f26a687246f88d0ece5a45aee7e2 = echarts.init(
+            document.getElementById('ce47f26a687246f88d0ece5a45aee7e2'), 'white', {renderer: 'canvas'});
+        var option_ce47f26a687246f88d0ece5a45aee7e2 = {
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "\u4e0a\u6620\u7535\u5f71\u6570\u91cf",
+            "label": {
+                "show": false,
+                "position": "top",
+                "fontSize": 12
+            },
+            "mapType": "world",
+            "data": [
+                {
+                    "name": "China",
+                    "value": 1891
+                },
+                {
+                    "name": "United States",
+                    "value": 950
+                },
+                {
+                    "name": "India",
+                    "value": 56
+                },
+                {
+                    "name": "Russia",
+                    "value": 39
+                },
+                {
+                    "name": "Korea",
+                    "value": 300
+                },
+                {
+                    "name": "Japan",
+                    "value": 250
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": 100
+                },
+                {
+                    "name": "France",
+                    "value": 50
+                },
+                {
+                    "name": "Canada",
+                    "value": 35
+                },
+                {
+                    "name": "Australia",
+                    "value": 20
+                }
+            ],
+            "roam": true,
+            "showLegendSymbol": true,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u4e0a\u6620\u7535\u5f71\u6570\u91cf"
+            ],
+            "selected": {
+                "\u4e0a\u6620\u7535\u5f71\u6570\u91cf": true
+            },
+            "show": true
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "text": "\u5728\u4e2d\u56fd\u4e0a\u6620\u7684\u5404\u56fd\u7535\u5f71",
+            "subtext": "\u526f\u6807\u9898\u98d2\u98d2\u5927\u82cf\u6253\u5927\u5927\u554a"
+        }
+    ],
+    "visualMap": {
+        "type": "continuous",
+        "min": 0,
+        "max": 2000,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true
+    }
+};
+        chart_ce47f26a687246f88d0ece5a45aee7e2.setOption(option_ce47f26a687246f88d0ece5a45aee7e2);
+    </script>
+
+<h3 id="添加视频"><a href="#添加视频" class="headerlink" title="添加视频"></a>添加视频</h3><video src="https://media.w3.org/2010/05/sintel/trailer.mp4" controls="controls">
+your browser does not support the video tag
+</video>
+
         </div>
         
             <ul class="post-copyright">
@@ -483,6 +629,10 @@
         <a class="is-flex" href="#添加pyechart图表">
         <span class="has-mr-6">2.3.6</span>
         <span>添加pyechart图表</span>
+        </a></li><li>
+        <a class="is-flex" href="#添加视频">
+        <span class="has-mr-6">2.3.7</span>
+        <span>添加视频</span>
         </a></li></ul></li></ul></li></ul>
         </div>
     </div>
