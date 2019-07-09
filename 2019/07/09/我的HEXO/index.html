@@ -348,14 +348,22 @@ your browser does not support the video tag
 <div class="card">
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-comments" data-width="100%" data-href="https://www.senhai.wang/2019/07/09/我的HEXO/" data-num-posts="5"></div>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+	var gitment = new Gitment({
+		id: '2019/07/09/我的HEXO/',
+		owner: 'Wang-Senhai',
+		repo: 'blog_comment',
+		oauth: {
+			client_id: 'bfdbdc8e920e7eece65a',
+			client_secret: 'da8a28b1898578dda6b40629f4a88b90f12bcbd9',
+		},
+	})
+	gitment.render('comment-container')
+</script>
 
     </div>
 </div>
