@@ -21,6 +21,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -98,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="markdown,blog,hexo">
+  <meta name="keywords" content="markdown,hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何美化Hexo主题">
 <meta property="og:url" content="https://www.senhai.wang/2019/07/10/theme-beautify/index.html">
@@ -503,10 +514,10 @@
 <h1 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h1><h2 id="站点访问量统计"><a href="#站点访问量统计" class="headerlink" title="站点访问量统计"></a>站点访问量统计</h2><p>该功能由 不蒜子 提供<br>独立访客数为 UV，网站浏览量为 PV，访客数和浏览量的区别在于一个用户连续点击 n 篇文章，会记录 n 次浏览量，但只记录一次访客数。</p>
 <p>由于不蒜子是基于域名来进行统计计算的，所以通过 localhost:4000 端口访问的时候统计数据 PV 和 UV 都会异常的大，属于正常现象。</p>
 <p>在页脚布局模板文件首行添加如下代码：<br>themes\next\layout_partial\footer.swig</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <p>刷新浏览器即可生效。<br>高阶用法：通过修改代码来自定义统计文案，如果你想使用本站统计文案，需要对不蒜子的代码做出如下修改:<br>themes\next\layout_third-party\analytics\busuanzi-counter.swig</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>visitors %&#125;</span><br><span class="line"><span class="bullet">-   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-uv"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('footer.total_visitors') &#125;&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-uv"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>visitors', '<span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&#123;&#123; theme.busuanzi_count.total_visitors_icon &#125;&#125;"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>views %&#125;</span><br><span class="line"><span class="bullet">-   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-pv"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('footer.total_views') &#125;&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-pv"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>views', '<span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&#123;&#123; theme.busuanzi_count.total_views_icon &#125;&#125;"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>visitors %&#125;</span><br><span class="line"><span class="bullet">-   </span>&lt;span class="site-uv" title="&#123;&#123; __('footer.total_visitors') &#125;&#125;"&gt;</span><br><span class="line"><span class="bullet">+   </span>&lt;span class="site-uv"&gt;</span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>visitors', '&lt;span class="busuanzi-value" id="busuanzi_value_site_uv"&gt;&lt;/span&gt;') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span>&lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.total_visitors_icon &#125;&#125;"&gt;&lt;/i&gt;</span><br><span class="line"><span class="bullet">-     </span>&lt;span class="busuanzi-value" id="busuanzi_value_site_uv"&gt;&lt;/span&gt;</span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>views %&#125;</span><br><span class="line"><span class="bullet">-   </span>&lt;span class="site-pv" title="&#123;&#123; __('footer.total_views') &#125;&#125;"&gt;</span><br><span class="line"><span class="bullet">+   </span>&lt;span class="site-pv"&gt;</span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>views', '&lt;span class="busuanzi-value" id="busuanzi_value_site_pv"&gt;&lt;/span&gt;') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span>&lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.total_views_icon &#125;&#125;"&gt;&lt;/i&gt;</span><br><span class="line"><span class="bullet">-     </span>&lt;span class="busuanzi-value" id="busuanzi_value_site_pv"&gt;&lt;/span&gt;</span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>在自定义样式文件中添加如下样式：<br>themes/next/source/css/_custom/custom.styl</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//修改不蒜子数据颜色</span><br><span class="line">.busuanzi-value &#123;</span><br><span class="line">  color: #1890ff;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -576,9 +587,9 @@
           
             <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
           
-            <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
-          
             <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
           
         </div>
       
@@ -699,6 +710,8 @@
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -715,6 +728,8 @@
                     
                   
                     
+                    
+                      
                     
                       
                     
@@ -1094,5 +1109,7 @@
     setInterval("timer()",1000)
   </script>
 
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>

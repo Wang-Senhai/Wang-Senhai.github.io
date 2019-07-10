@@ -21,6 +21,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -98,17 +109,17 @@
 
 
 
-  <meta name="description" content="var APP_ID = 9VPV1Q1jiEQiN30oMMT0qF1y-gzGzoHsz;  //输入个人LeanCloud账号AppID   var APP_KEY = trtBcxXE965cgmYDEXzYQ9bQ;  //输入个人LeanCloud账号AppKey   AV.init({     appId: APP_ID,     appKey: APP_KEY   })">
+  <meta name="description" content="var APP_ID = 9VPV1Q1jiEQiN30oMMT0qF1y-gzGzoHsz;  //输入个人LeanCloud账号AppID   var APP_KEY = trtBcxXE965cgmYDEXzYQ9bQ;  //输入个人LeanCloud账号AppKey   AV.init({     appId: APP_ID,     appKey: APP_KEY   }">
 <meta property="og:type" content="website">
 <meta property="og:title" content="热门文章Top 10">
 <meta property="og:url" content="https://www.senhai.wang/top/index.html">
 <meta property="og:site_name" content="王森海">
-<meta property="og:description" content="var APP_ID = 9VPV1Q1jiEQiN30oMMT0qF1y-gzGzoHsz;  //输入个人LeanCloud账号AppID   var APP_KEY = trtBcxXE965cgmYDEXzYQ9bQ;  //输入个人LeanCloud账号AppKey   AV.init({     appId: APP_ID,     appKey: APP_KEY   })">
+<meta property="og:description" content="var APP_ID = 9VPV1Q1jiEQiN30oMMT0qF1y-gzGzoHsz;  //输入个人LeanCloud账号AppID   var APP_KEY = trtBcxXE965cgmYDEXzYQ9bQ;  //输入个人LeanCloud账号AppKey   AV.init({     appId: APP_ID,     appKey: APP_KEY   }">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-10T04:24:24.631Z">
+<meta property="og:updated_time" content="2019-07-10T04:30:42.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="热门文章Top 10">
-<meta name="twitter:description" content="var APP_ID = 9VPV1Q1jiEQiN30oMMT0qF1y-gzGzoHsz;  //输入个人LeanCloud账号AppID   var APP_KEY = trtBcxXE965cgmYDEXzYQ9bQ;  //输入个人LeanCloud账号AppKey   AV.init({     appId: APP_ID,     appKey: APP_KEY   })">
+<meta name="twitter:description" content="var APP_ID = 9VPV1Q1jiEQiN30oMMT0qF1y-gzGzoHsz;  //输入个人LeanCloud账号AppID   var APP_KEY = trtBcxXE965cgmYDEXzYQ9bQ;  //输入个人LeanCloud账号AppKey   AV.init({     appId: APP_ID,     appKey: APP_KEY   }">
 
 
 
@@ -393,7 +404,8 @@
       <div class="post-body">
         
         
-          <div id="post-rank"></div>
+          <div>
+<div id="post-rank"></div>
 
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.10.0/dist/av-min.js"></script>
 <script>
@@ -427,6 +439,7 @@
     color: #ff4d4f;
   }
 </style>
+</div>
         
       </div>
       
@@ -507,6 +520,8 @@
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -523,6 +538,8 @@
                     
                   
                     
+                    
+                      
                     
                       
                     
@@ -864,5 +881,7 @@
     setInterval("timer()",1000)
   </script>
 
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>

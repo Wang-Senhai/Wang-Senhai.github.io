@@ -21,6 +21,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
 
 
 
@@ -98,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="markdown,blog,hexo">
+  <meta name="keywords" content="markdown,hexo,blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何发布一篇Hexo博文">
 <meta property="og:url" content="https://www.senhai.wang/2019/07/09/我的HEXO/index.html">
@@ -109,7 +120,7 @@
 <meta property="og:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
 <meta property="og:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
 <meta property="og:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
-<meta property="og:updated_time" content="2019-07-09T16:36:19.647Z">
+<meta property="og:updated_time" content="2019-07-10T04:38:38.014Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何发布一篇Hexo博文">
 <meta name="twitter:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
@@ -489,7 +500,7 @@
 <h2 id="使用井号创建分级标题"><a href="#使用井号创建分级标题" class="headerlink" title="使用井号创建分级标题"></a>使用井号创建分级标题</h2><p>为排版方便，不运行此处代码</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 使用井号进行标题分类，井号后加空格</span></span><br><span class="line"><span class="section">## 这里是二级标题的效果</span></span><br><span class="line"><span class="section">### 三级</span></span><br><span class="line"><span class="section">#### 四级</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="文字效果"><a href="#文字效果" class="headerlink" title="文字效果"></a>文字效果</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">***粗斜体**</span>*</span><br><span class="line">~被删除的文本~</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>带有下划线的文本<span class="xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"#dd0000"</span>&gt;</span></span>使用font标签改变字体颜色<span class="xml"><span class="tag">&lt;/<span class="name">font</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">"1"</span>&gt;</span></span>使用font标签改变字体大小<span class="xml"><span class="tag">&lt;/<span class="name">font</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">"楷体"</span>&gt;</span></span>使用font标签改变字体样式<span class="xml"><span class="tag">&lt;/<span class="name">font</span>&gt;</span></span></span><br><span class="line">这里是一个带有脚注的文本[^我的网站]:https://senhai.wang</span><br><span class="line">使用三个星号来添加分割线</span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line">这里添加一个带有超链接的文本[<span class="string">我的网站</span>](<span class="link">https://senhai.wang</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="文字效果"><a href="#文字效果" class="headerlink" title="文字效果"></a>文字效果</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">***粗斜体**</span>*</span><br><span class="line">~被删除的文本~</span><br><span class="line">&lt;u&gt;带有下划线的文本&lt;/u&gt;</span><br><span class="line">&lt;font color="#dd0000"&gt;使用font标签改变字体颜色&lt;/font&gt;</span><br><span class="line">&lt;font size="1"&gt;使用font标签改变字体大小&lt;/font&gt;</span><br><span class="line">&lt;font face="楷体"&gt;使用font标签改变字体样式&lt;/font&gt;</span><br><span class="line">这里是一个带有脚注的文本[^我的网站]:https://senhai.wang</span><br><span class="line">使用三个星号来添加分割线</span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line">这里添加一个带有超链接的文本[<span class="string">我的网站</span>](<span class="link">https://senhai.wang</span>)</span><br></pre></td></tr></table></figure>
 
 <p><em>斜体</em><br><strong>粗体</strong><br><strong><em>粗斜体</em></strong><br><del>被删除的文本</del><br><u>带有下划线的文本</u><br><font color="#dd0000">使用font标签改变字体颜色</font><br><font size="1">使用font标签改变字体大小</font><br><font face="楷体">使用font标签改变字体样式</font><br>这里是一个带有脚注的文本[^我的网站]:<a href="https://senhai.wang" target="_blank" rel="noopener">https://senhai.wang</a><br>使用三个星号来添加分割线</p>
 <hr>
@@ -713,9 +724,9 @@ your browser does not support the video tag
           
             <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
           
-            <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
-          
             <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
           
         </div>
       
@@ -840,6 +851,8 @@ your browser does not support the video tag
                     
                       
                     
+                      
+                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -856,6 +869,8 @@ your browser does not support the video tag
                     
                   
                     
+                    
+                      
                     
                       
                     
@@ -1235,5 +1250,7 @@ your browser does not support the video tag
     setInterval("timer()",1000)
   </script>
 
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>
