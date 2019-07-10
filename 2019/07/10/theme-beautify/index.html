@@ -33,6 +33,10 @@
 </script>
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
 
 
 
@@ -109,14 +113,14 @@
 
 
 
-  <meta name="keywords" content="markdown,hexo,blog">
+  <meta name="keywords" content="markdown,blog,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何美化Hexo主题">
 <meta property="og:url" content="https://www.senhai.wang/2019/07/10/theme-beautify/index.html">
 <meta property="og:site_name" content="王森海">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123_1280.jpg">
-<meta property="og:updated_time" content="2019-07-09T19:09:46.425Z">
+<meta property="og:updated_time" content="2019-07-10T05:24:07.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何美化Hexo主题">
 <meta name="twitter:image" content="https://cdn.pixabay.com/photo/2019/06/18/11/32/cat-4282123_1280.jpg">
@@ -259,6 +263,70 @@
         
         
           
+          <li class="menu-item menu-item-books">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>读书</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-movies">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br>电影</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-games">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>游戏</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-tags">
 
     
@@ -285,38 +353,6 @@
     
 
     <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-top">
-
-    
-    
-      
-    
-
-    
-
-    <a href="/top/" rel="section"><i class="menu-item-icon fa fa-fw fa-signal"></i> <br>排行</a>
 
   </li>
 
@@ -514,10 +550,10 @@
 <h1 id="数据统计"><a href="#数据统计" class="headerlink" title="数据统计"></a>数据统计</h1><h2 id="站点访问量统计"><a href="#站点访问量统计" class="headerlink" title="站点访问量统计"></a>站点访问量统计</h2><p>该功能由 不蒜子 提供<br>独立访客数为 UV，网站浏览量为 PV，访客数和浏览量的区别在于一个用户连续点击 n 篇文章，会记录 n 次浏览量，但只记录一次访客数。</p>
 <p>由于不蒜子是基于域名来进行统计计算的，所以通过 localhost:4000 端口访问的时候统计数据 PV 和 UV 都会异常的大，属于正常现象。</p>
 <p>在页脚布局模板文件首行添加如下代码：<br>themes\next\layout_partial\footer.swig</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">async</span> src=<span class="string">"https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <p>刷新浏览器即可生效。<br>高阶用法：通过修改代码来自定义统计文案，如果你想使用本站统计文案，需要对不蒜子的代码做出如下修改:<br>themes\next\layout_third-party\analytics\busuanzi-counter.swig</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>visitors %&#125;</span><br><span class="line"><span class="bullet">-   </span>&lt;span class="site-uv" title="&#123;&#123; __('footer.total_visitors') &#125;&#125;"&gt;</span><br><span class="line"><span class="bullet">+   </span>&lt;span class="site-uv"&gt;</span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>visitors', '&lt;span class="busuanzi-value" id="busuanzi_value_site_uv"&gt;&lt;/span&gt;') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span>&lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.total_visitors_icon &#125;&#125;"&gt;&lt;/i&gt;</span><br><span class="line"><span class="bullet">-     </span>&lt;span class="busuanzi-value" id="busuanzi_value_site_uv"&gt;&lt;/span&gt;</span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>views %&#125;</span><br><span class="line"><span class="bullet">-   </span>&lt;span class="site-pv" title="&#123;&#123; __('footer.total_views') &#125;&#125;"&gt;</span><br><span class="line"><span class="bullet">+   </span>&lt;span class="site-pv"&gt;</span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>views', '&lt;span class="busuanzi-value" id="busuanzi_value_site_pv"&gt;&lt;/span&gt;') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span>&lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.total_views_icon &#125;&#125;"&gt;&lt;/i&gt;</span><br><span class="line"><span class="bullet">-     </span>&lt;span class="busuanzi-value" id="busuanzi_value_site_pv"&gt;&lt;/span&gt;</span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>visitors %&#125;</span><br><span class="line"><span class="bullet">-   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-uv"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('footer.total_visitors') &#125;&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-uv"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>visitors', '<span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&#123;&#123; theme.busuanzi_count.total_visitors_icon &#125;&#125;"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% if theme.busuanzi<span class="emphasis">_count.total_</span>views %&#125;</span><br><span class="line"><span class="bullet">-   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-pv"</span> <span class="attr">title</span>=<span class="string">"&#123;&#123; __('footer.total_views') &#125;&#125;"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+   </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"site-pv"</span>&gt;</span></span></span><br><span class="line"><span class="bullet">+     </span>&#123;&#123; <span class="emphasis">__('footer.total_</span>views', '<span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span>') &#125;&#125;</span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-&#123;&#123; theme.busuanzi_count.total_views_icon &#125;&#125;"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="bullet">-     </span><span class="xml"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"busuanzi-value"</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;/span&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>在自定义样式文件中添加如下样式：<br>themes/next/source/css/_custom/custom.styl</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//修改不蒜子数据颜色</span><br><span class="line">.busuanzi-value &#123;</span><br><span class="line">  color: #1890ff;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -543,6 +579,20 @@
 
     
     
+    
+
+    
+    <div>
+    <div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>--------</span>
+      <i class="far fa-compass"></i>
+      <span>--------</span>
+    </div>
+  
+</div>
+    </div>
     
 
     
@@ -587,14 +637,41 @@
           
             <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
             <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
         </div>
       
 
       
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+          
+            <span class="post-meta-divider">|</span>
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
+          </div>
+        
+        </div>
       
       
 
@@ -710,8 +787,6 @@
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -728,8 +803,6 @@
                     
                   
                     
-                    
-                      
                     
                       
                     
@@ -936,6 +1009,12 @@
 
 
 
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
 
 
 
@@ -1048,6 +1127,26 @@
   
 
   
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
 
   
   <script>
@@ -1107,6 +1206,41 @@
     document.querySelector(".footer-inner").insertBefore(div, copyright.nextSibling);
     timer();
     setInterval("timer()",1000)
+  </script>
+
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+          $('#header').wobbleWindow({
+            radius: 50,
+            movementTop: false,
+            movementLeft: false,
+            movementRight: false,
+            debug: false,
+          });
+        
+
+        
+
+        
+          $('#footer').wobbleWindow({
+            radius: 50,
+            movementBottom: false,
+            movementLeft: false,
+            movementRight: false,
+            offsetX: ,
+            position: 'absolute',
+            debug: false,
+          });
+        
+      });
+    }
   </script>
 
 

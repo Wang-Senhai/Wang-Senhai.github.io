@@ -33,6 +33,10 @@
 </script>
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
 
 
 
@@ -109,7 +113,7 @@
 
 
 
-  <meta name="keywords" content="markdown,hexo,blog">
+  <meta name="keywords" content="markdown,blog,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何发布一篇Hexo博文">
 <meta property="og:url" content="https://www.senhai.wang/2019/07/09/我的HEXO/index.html">
@@ -120,7 +124,7 @@
 <meta property="og:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
 <meta property="og:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
 <meta property="og:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
-<meta property="og:updated_time" content="2019-07-10T04:38:38.014Z">
+<meta property="og:updated_time" content="2019-07-10T05:55:01.732Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何发布一篇Hexo博文">
 <meta name="twitter:image" content="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg">
@@ -263,6 +267,70 @@
         
         
           
+          <li class="menu-item menu-item-books">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>读书</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-movies">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-video-camera"></i> <br>电影</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-games">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/games/" rel="section"><i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>游戏</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-tags">
 
     
@@ -289,38 +357,6 @@
     
 
     <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-      
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-top">
-
-    
-    
-      
-    
-
-    
-
-    <a href="/top/" rel="section"><i class="menu-item-icon fa fa-fw fa-signal"></i> <br>排行</a>
 
   </li>
 
@@ -589,26 +625,26 @@ Bored
 
 <h2 id="添加Python代码"><a href="#添加Python代码" class="headerlink" title="添加Python代码"></a>添加Python代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):<span class="comment">#在编译器中会使用python的语法自动缩进</span></span><br><span class="line">    print(<span class="string">"hello"</span>)</span><br></pre></td></tr></table></figure>
 
-<h2 id="加入图片"><a href="#加入图片" class="headerlink" title="加入图片"></a>加入图片</h2><h3 id="使用markdown语言添加"><a href="#使用markdown语言添加" class="headerlink" title="使用markdown语言添加"></a>使用markdown语言添加</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">熊猫-测试</span>](<span class="link">https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg "panada"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="加入图片"><a href="#加入图片" class="headerlink" title="加入图片"></a>加入图片</h2><h3 id="使用markdown语言添加"><a href="#使用markdown语言添加" class="headerlink" title="使用markdown语言添加"></a>使用markdown语言添加</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">熊猫-测试</span>](<span class="link">https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg "panda"</span>)</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" alt="熊猫-测试" title="panada"></p>
-<h3 id="使用img标签直接添加，调整图片大小"><a href="#使用img标签直接添加，调整图片大小" class="headerlink" title="使用img标签直接添加，调整图片大小"></a>使用img标签直接添加，调整图片大小</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">'https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg'</span> <span class="attr">width</span>=<span class="string">"50%"</span> <span class="attr">alt</span>=<span class="string">"熊猫"</span><span class="attr">title</span>=<span class="string">"Panada"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" alt="熊猫-测试" title="panda"></p>
+<h3 id="使用img标签直接添加，调整图片大小"><a href="#使用img标签直接添加，调整图片大小" class="headerlink" title="使用img标签直接添加，调整图片大小"></a>使用img标签直接添加，调整图片大小</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">'https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg'</span> <span class="attr">width</span>=<span class="string">"50%"</span> <span class="attr">alt</span>=<span class="string">"熊猫"</span><span class="attr">title</span>=<span class="string">"Panda"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <div>
-<img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" width="50%" alt="熊猫" title="Panada">
+<img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" width="50%" alt="熊猫" title="Panda">
 </div>
 
-<h3 id="外加div标签，调整图片位置"><a href="#外加div标签，调整图片位置" class="headerlink" title="外加div标签，调整图片位置"></a>外加div标签，调整图片位置</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">'https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg'</span> <span class="attr">width</span>=<span class="string">"50%"</span> <span class="attr">alt</span>=<span class="string">"熊猫"</span><span class="attr">title</span>=<span class="string">"Panada"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="外加div标签，调整图片位置"><a href="#外加div标签，调整图片位置" class="headerlink" title="外加div标签，调整图片位置"></a>外加div标签，调整图片位置</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">'https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg'</span> <span class="attr">width</span>=<span class="string">"50%"</span> <span class="attr">alt</span>=<span class="string">"熊猫"</span><span class="attr">title</span>=<span class="string">"Panda"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <div align="center">
-    <img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" width="50%" alt="熊猫" title="Panada">
+    <img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" width="50%" alt="熊猫" title="Panda">
 </div>
 
-<h3 id="使用a标签，给图片添加超链接"><a href="#使用a标签，给图片添加超链接" class="headerlink" title="使用a标签，给图片添加超链接"></a>使用a标签，给图片添加超链接</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://senhai.wang"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">'https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg'</span> <span class="attr">width</span>=<span class="string">"50%"</span> <span class="attr">alt</span>=<span class="string">"熊猫"</span><span class="attr">title</span>=<span class="string">"Panada"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用a标签，给图片添加超链接"><a href="#使用a标签，给图片添加超链接" class="headerlink" title="使用a标签，给图片添加超链接"></a>使用a标签，给图片添加超链接</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://senhai.wang"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">'https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg'</span> <span class="attr">width</span>=<span class="string">"50%"</span> <span class="attr">alt</span>=<span class="string">"熊猫"</span><span class="attr">title</span>=<span class="string">"Panda"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <div align="center">
     <a href="https://senhai.wang" target="_blank" rel="noopener">
-    <img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" width="50%" alt="熊猫" title="Panada">
+    <img src="https://pic.52112.com/180205/18020526/a9yPQozt0g.jpg" width="50%" alt="熊猫" title="Panda">
     </a>
 </div>
 
@@ -683,6 +719,20 @@ your browser does not support the video tag
     
 
     
+    <div>
+    <div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>--------</span>
+      <i class="far fa-compass"></i>
+      <span>--------</span>
+    </div>
+  
+</div>
+    </div>
+    
+
+    
 
     
       
@@ -724,14 +774,41 @@ your browser does not support the video tag
           
             <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i> markdown</a>
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
             <a href="/tags/blog/" rel="tag"><i class="fa fa-tag"></i> blog</a>
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
           
         </div>
       
 
       
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+          
+            <span class="post-meta-divider">|</span>
+          
+          <div class="social_share">
+            
+            
+              <div id="needsharebutton-postbottom">
+                <span class="btn">
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+            
+            
+          </div>
+        
+        </div>
       
       
 
@@ -851,8 +928,6 @@ your browser does not support the video tag
                     
                       
                     
-                      
-                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
@@ -869,8 +944,6 @@ your browser does not support the video tag
                     
                   
                     
-                    
-                      
                     
                       
                     
@@ -1077,6 +1150,12 @@ your browser does not support the video tag
 
 
 
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
 
 
 
@@ -1189,6 +1268,26 @@ your browser does not support the video tag
   
 
   
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+  <script>
+    
+      pbOptions = {};
+      
+        pbOptions.iconStyle = "box";
+      
+        pbOptions.boxForm = "horizontal";
+      
+        pbOptions.position = "bottomCenter";
+      
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
 
   
   <script>
@@ -1248,6 +1347,41 @@ your browser does not support the video tag
     document.querySelector(".footer-inner").insertBefore(div, copyright.nextSibling);
     timer();
     setInterval("timer()",1000)
+  </script>
+
+
+
+
+  <script src="/js/wobblewindow.js"></script>
+  <script>
+    //只在桌面版网页启用特效
+    if( window.innerWidth > 768  ){
+      $(document).ready(function () {
+        
+          $('#header').wobbleWindow({
+            radius: 50,
+            movementTop: false,
+            movementLeft: false,
+            movementRight: false,
+            debug: false,
+          });
+        
+
+        
+
+        
+          $('#footer').wobbleWindow({
+            radius: 50,
+            movementBottom: false,
+            movementLeft: false,
+            movementRight: false,
+            offsetX: ,
+            position: 'absolute',
+            debug: false,
+          });
+        
+      });
+    }
   </script>
 
 
