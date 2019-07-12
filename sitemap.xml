@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.senhai.wang/about/index.html</loc>
+    
+    <lastmod>2019-07-12T11:12:21.893Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.senhai.wang/2019/07/09/audio-test/</loc>
     
     <lastmod>2019-07-11T14:47:11.406Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://www.senhai.wang/home/index.html</loc>
     
     <lastmod>2019-06-25T12:39:30.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.senhai.wang/about/index.html</loc>
-    
-    <lastmod>2019-06-25T12:30:21.578Z</lastmod>
     
   </url>
   
